@@ -1,4 +1,4 @@
-class Ground {
+class Tanker {
   constructor(x,y,width,height) {
     var options = {
         isStatic: true
@@ -11,7 +11,11 @@ class Ground {
   display(){
     var pos =this.body.position;
     rectMode(CENTER);
-    fill("brown");
+    fill("white");
+    circle(pos.x,pos.y-40,this.width-10)
+    rect(pos.x, pos.y-20, this.width, this.height);
     rect(pos.x, pos.y, this.width, this.height);
+    
   }
 };
+0
